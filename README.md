@@ -9,7 +9,15 @@ This is a lightweight yet powerful **Flashcard Generator** that uses a Hugging F
 Many students and educators need an efficient way to revise key concepts from long academic texts. This tool reads textbook or lecture content and turns it into editable flashcards — saving time, improving retention, and making study smarter.
 
 ---
+| Library        | Purpose                                    |
+| -------------- | ------------------------------------------ |
+| `transformers` | LLM loading (`valhalla/t5-small-qa-qg-hl`) |
+| `torch`        | Backend for model execution (PyTorch)      |
+| `streamlit`    | Web interface for interaction              |
+| `PyMuPDF`      | Extracting text from `.pdf` files          |
+| `pandas`       | Flashcard export (CSV, JSON)               |
 
+---
 ## ✅ Features
 
 - Upload `.txt` or `.pdf` documents
@@ -36,13 +44,7 @@ Many students and educators need an efficient way to revise key concepts from lo
 ---
 
 ## 📦 Folder Structure
-flashcard_generator/
-├── app.py # Streamlit main app
-├── flashcard_generator.py # Flashcard generation logic
-├── utils.py # File reading + export functions
-├── prompt_template.txt # Optional template for LLMs
-├── requirements.txt # Project dependencies
-└── README.md # This documentation
+<pre> flashcard_generator/ ├── app.py # Streamlit UI logic ├── flashcard_generator.py # Core logic to generate Q&A flashcards ├── utils.py # File upload parsing and export helpers ├── prompt_template.txt # Optional prompt format (for instruction-tuned models) ├── requirements.txt # Python dependencies └── README.md # Project documentation </pre>
 
 ---
 
@@ -55,6 +57,8 @@ flashcard_generator/
 5. Final cards are exported as `.csv` or `.json`.
 
 ---
+## Short Demo Video
+https://www.loom.com/share/e798fceab7cb47cfbbde2e65146c3910?sid=08659b1a-dc5b-4366-a34d-43251db61075
 
 
 
