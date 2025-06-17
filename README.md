@@ -60,6 +60,27 @@ Many students and educators need an efficient way to revise key concepts from lo
 ## Short Demo Video
 https://www.loom.com/share/e798fceab7cb47cfbbde2e65146c3910?sid=08659b1a-dc5b-4366-a34d-43251db61075
 
+## Setup Guide
+# 1. Clone the repository
+git clone https://github.com/your-username/flashcard-generator.git
+cd flashcard-generator
+
+# 2. (Optional) Create and activate a virtual environment
+python -m venv .venv
+
+# On Windows
+.venv\Scripts\activate
+
+# On macOS/Linux
+source .venv/bin/activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the Streamlit app
+streamlit run app.py
+
+
 
 
 
